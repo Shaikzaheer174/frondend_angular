@@ -1,0 +1,11 @@
+Required development Environment
+---------------------------------
+node
+NPM
+Angular Cli
+text editor
+
+to check npm version ->   npm --version
+to install cli -> npm install -g @angular/cli  
+to check the angular installed or not or to see version --> ng --version
+ng new "projectname" --> to create appication.
