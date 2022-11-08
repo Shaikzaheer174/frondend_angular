@@ -9,3 +9,13 @@ to check npm version ->   npm --version
 to install cli -> npm install -g @angular/cli  
 to check the angular installed or not or to see version --> ng --version
 ng new "projectname" --> to create appication.
+to create a component --> ng g c nameofthecomponent
+to create a component with inline template and inline style --> ng g c nameofthecomponent -it -is --skipTests=true
+if it is not working u can add this below code in angular.json file
+  "schematics": {
+    "@schematics/angular:component": {
+      "style": "scss",
+      "inlineTemplate": true,
+      "inlineStyle": true
+    }
+  }   
