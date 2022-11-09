@@ -19,3 +19,7 @@ if it is not working u can add this below code in angular.json file
       "inlineStyle": true
     }
   }   
+interpolation means sending data from class to view using {{}} -- refer test component and p1 component
+
+
+
