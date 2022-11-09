@@ -21,5 +21,7 @@ if it is not working u can add this below code in angular.json file
   }   
 interpolation means sending data from class to view using {{}} -- refer test component and p1 component
 
+Without property binding Boolean values not work with interpolation. 
+variable value --> [attribute]= "value"  i.e., we assign the value to the attribute by [].
 
-
+for multiple class binding need to use ngclass

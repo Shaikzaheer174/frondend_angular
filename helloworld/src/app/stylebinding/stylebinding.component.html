@@ -1,0 +1,15 @@
+<p>stylebinding works!</p>
+<p style="color: pink;">normal css!</p><!-- normal css -->
+
+<p [style.color]=" 'pink' ">stylebinding</p><!-- style binding-->
+
+<!-- we can also use proprty values -->
+<h2 [style.color]="myColour">property values binding</h2>
+
+
+<!-- conditional  -->
+<h2>conditional binding example</h2>
+<h2 [style.color]="required ? 'green' :'blue' ">condition bind</h2>
+
+<!-- multiple styles -->
+<h2 [ngStyle]="multiplecolours">multiple styles</h2>
