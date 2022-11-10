@@ -1,0 +1,24 @@
+<p>ifdirective-ex works!</p>
+<h1 *ngIf="true">{{"welcome to"+name.toUpperCase()}}</h1>
+<h1 *ngIf="false">{{"welcome to"+name.toUpperCase()}}</h1>
+
+<!-- by dynamic -->
+<h1 *ngIf="status">{{"welcome to"+name}}</h1>
+
+<!-- else block too -->
+<h1 *ngIf="status; else anotherblock">true block</h1>
+
+<ng-template #anotherblock>
+<h1>else block</h1>
+</ng-template>
+
+<!-- if else seperate -->
+<h1 *ngIf="status; then thisblock else anotherblock">true block</h1>
+
+<ng-template #thisblock>
+<h1>turuu block</h1>
+</ng-template>
+
+<ng-template #anotherblock>
+<h1>elsu block</h1>
+</ng-template> 

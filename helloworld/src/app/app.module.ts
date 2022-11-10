@@ -13,6 +13,7 @@ import { StylebindingComponent } from './stylebinding/stylebinding.component';
 import { EventbindingComponent } from './eventbinding/eventbinding.component';
 import { TemplatereferencevariablesComponent } from './templatereferencevariables/templatereferencevariables.component';
 import { TwowaydatabindingComponent } from './twowaydatabinding/twowaydatabinding.component';
+import { IfdirectiveEXComponent } from './ifdirective-ex/ifdirective-ex.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { TwowaydatabindingComponent } from './twowaydatabinding/twowaydatabindin
     StylebindingComponent,
     EventbindingComponent,
     TemplatereferencevariablesComponent,
-    TwowaydatabindingComponent
+    TwowaydatabindingComponent,
+    IfdirectiveEXComponent
   ],
   imports: [
     BrowserModule,
