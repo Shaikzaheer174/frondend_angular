@@ -25,3 +25,6 @@ Without property binding Boolean values not work with interpolation.
 variable value --> [attribute]= "value"  i.e., we assign the value to the attribute by [].
 
 for multiple class binding need to use ngclass
+event binding means ex: click event that is when we click something will be happen
+
+template reference variable #variable_name in the template and  #variable_name's value we refer

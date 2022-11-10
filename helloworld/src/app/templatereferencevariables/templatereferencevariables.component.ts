@@ -12,9 +12,9 @@ export class TemplatereferencevariablesComponent implements OnInit {
   ngOnInit(): void {
   }
 
- public mymessage: string = "";
-  message(name:any){
-    this.mymessage = name;
+  public greetings ="";
+  onclick(name:any){
+    this.greetings = "hello "+name;
   }
 
 }

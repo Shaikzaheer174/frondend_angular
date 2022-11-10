@@ -1,6 +1,4 @@
 <p>templatereferencevariables works!</p>
-
-<input #name type="text">
-<button (click)="message(name.value)" type="button">submit!</button>
-
-<h2>{{mymessage}}</h2>
+<input #name type="text" name="name" placeholder="enter your name">
+<button (click)="onclick(name.value)">submit name</button>
+<h1>{{greetings}}</h1>
