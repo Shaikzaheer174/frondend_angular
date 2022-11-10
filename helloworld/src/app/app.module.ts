@@ -14,6 +14,7 @@ import { EventbindingComponent } from './eventbinding/eventbinding.component';
 import { TemplatereferencevariablesComponent } from './templatereferencevariables/templatereferencevariables.component';
 import { TwowaydatabindingComponent } from './twowaydatabinding/twowaydatabinding.component';
 import { IfdirectiveEXComponent } from './ifdirective-ex/ifdirective-ex.component';
+import { SwitchdirectiveEXComponent } from './switchdirective-ex/switchdirective-ex.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { IfdirectiveEXComponent } from './ifdirective-ex/ifdirective-ex.componen
     EventbindingComponent,
     TemplatereferencevariablesComponent,
     TwowaydatabindingComponent,
-    IfdirectiveEXComponent
+    IfdirectiveEXComponent,
+    SwitchdirectiveEXComponent
   ],
   imports: [
     BrowserModule,
