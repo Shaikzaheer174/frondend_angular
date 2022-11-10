@@ -1,0 +1,12 @@
+<p>for-directive-ex works!</p>
+--------------------------------
+<div *ngFor="let i of list; index as e; first as f;last as l">
+   <h1>{{i}} ========== {{e}}-----{{f}}====={{l}}</h1>
+</div>
+<br>
+<br>
+<br>
+
+<div *ngFor="let i of list; even as e; odd as o">
+    <h1>{{i}} **********{{e}}************{{o}}</h1>
+</div>

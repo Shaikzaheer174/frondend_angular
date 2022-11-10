@@ -8,4 +8,6 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'helloworld';
   name = 'zaheer';
+
+  public sender = "sending mesg to child component"
 }

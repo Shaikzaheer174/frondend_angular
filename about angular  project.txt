@@ -28,3 +28,22 @@ for multiple class binding need to use ngclass
 event binding means ex: click event that is when we click something will be happen
 
 template reference variable #variable_name in the template and  #variable_name's value we refer
+
+
+ngIf Example
+<h1*ngIf=true; else elseblock >hi<h1>
+<ng-template #elseblock>i am else</ng-template>
+
+
+ngSwitch Example
+<div [ngSwitch]="choice">
+    <li *ngSwitchCase="'one'">1</li>
+    <li *ngSwitchCase="'two'">2</li>
+    <li *ngSwitchCase="'three'">3</li>
+    <li *ngSwitchDefault>default</li>
+</div>
+
+ngFor example
+<div *ngFor="let x of items">
+<h1>{{X}}</h1>
+</div>

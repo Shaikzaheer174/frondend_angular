@@ -15,6 +15,8 @@ import { TemplatereferencevariablesComponent } from './templatereferencevariable
 import { TwowaydatabindingComponent } from './twowaydatabinding/twowaydatabinding.component';
 import { IfdirectiveEXComponent } from './ifdirective-ex/ifdirective-ex.component';
 import { SwitchdirectiveEXComponent } from './switchdirective-ex/switchdirective-ex.component';
+import { ForDirectiveExComponent } from './for-directive-ex/for-directive-ex.component';
+import { ComponentInteractionChildToParentViceVersaComponent } from './component-interaction-child-to-parent-vice-versa/component-interaction-child-to-parent-vice-versa.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { SwitchdirectiveEXComponent } from './switchdirective-ex/switchdirective
     TemplatereferencevariablesComponent,
     TwowaydatabindingComponent,
     IfdirectiveEXComponent,
-    SwitchdirectiveEXComponent
+    SwitchdirectiveEXComponent,
+    ForDirectiveExComponent,
+    ComponentInteractionChildToParentViceVersaComponent
   ],
   imports: [
     BrowserModule,
