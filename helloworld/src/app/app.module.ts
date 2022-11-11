@@ -17,6 +17,7 @@ import { IfdirectiveEXComponent } from './ifdirective-ex/ifdirective-ex.componen
 import { SwitchdirectiveEXComponent } from './switchdirective-ex/switchdirective-ex.component';
 import { ForDirectiveExComponent } from './for-directive-ex/for-directive-ex.component';
 import { ComponentInteractionChildToParentViceVersaComponent } from './component-interaction-child-to-parent-vice-versa/component-interaction-child-to-parent-vice-versa.component';
+import { PipesComponent } from './pipes/pipes.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { ComponentInteractionChildToParentViceVersaComponent } from './component
     IfdirectiveEXComponent,
     SwitchdirectiveEXComponent,
     ForDirectiveExComponent,
-    ComponentInteractionChildToParentViceVersaComponent
+    ComponentInteractionChildToParentViceVersaComponent,
+    PipesComponent
   ],
   imports: [
     BrowserModule,

@@ -10,4 +10,8 @@ export class AppComponent {
   name = 'zaheer';
 
   public sender = "sending mesg to child component"
+
+  public message:any;
+
+
 }

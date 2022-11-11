@@ -15,8 +15,11 @@ export class ComponentInteractionChildToParentViceVersaComponent implements OnIn
   @Input() receiver:any
 
 
-  
-  @Output() public childInfo = new EventEmitter();
+  @Output() public childmesg = new EventEmitter();
+
+  public fireEvent(){
+    this.childmesg.emit("this mesg from child");
+  }
 
 
 }
