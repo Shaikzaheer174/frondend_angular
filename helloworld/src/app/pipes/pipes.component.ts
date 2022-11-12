@@ -12,4 +12,14 @@ export class PipesComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  public name ="zaheer";
+
+  public mesg =" this is pipes example";
+
+  public personname = {
+    "name": "zaheer",
+    "website": "codewithzaheer"
+  }
+
+  public date = new Date();
 }

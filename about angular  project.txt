@@ -47,3 +47,8 @@ ngFor example
 <div *ngFor="let x of items">
 <h1>{{X}}</h1>
 </div>
+
+Component interaction.Emitter.Module is used.To share data.Between.With the help of subscribe or emit method.
+
+pipes ==> We're going to use in angular.What is meant by pipe?pipes are used to transform the incoming stream of data in to required format before displaying in the view
+
