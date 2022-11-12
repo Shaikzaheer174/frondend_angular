@@ -52,3 +52,8 @@ Component interaction.Emitter.Module is used.To share data.Between.With the help
 
 pipes ==> We're going to use in angular.What is meant by pipe?pipes are used to transform the incoming stream of data in to required format before displaying in the view
 
+services explained through the studentdetails and studentlist component
+dependency injection: StudentServiceService is a serviceclass that provides services tostudentdetails and studentlist component.
+
+
+

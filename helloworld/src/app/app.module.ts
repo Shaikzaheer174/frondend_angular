@@ -18,6 +18,9 @@ import { SwitchdirectiveEXComponent } from './switchdirective-ex/switchdirective
 import { ForDirectiveExComponent } from './for-directive-ex/for-directive-ex.component';
 import { ComponentInteractionChildToParentViceVersaComponent } from './component-interaction-child-to-parent-vice-versa/component-interaction-child-to-parent-vice-versa.component';
 import { PipesComponent } from './pipes/pipes.component';
+import { StudentListComponent } from './student-list/student-list.component';
+import { StudentDetailsComponent } from './student-details/student-details.component';
+import { StudentServiceService } from './student-service.service';
 
 @NgModule({
   declarations: [
@@ -35,14 +38,16 @@ import { PipesComponent } from './pipes/pipes.component';
     SwitchdirectiveEXComponent,
     ForDirectiveExComponent,
     ComponentInteractionChildToParentViceVersaComponent,
-    PipesComponent
+    PipesComponent,
+    StudentListComponent,
+    StudentDetailsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [StudentServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
