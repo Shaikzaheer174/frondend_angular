@@ -22,6 +22,8 @@ import { StudentListComponent } from './student-list/student-list.component';
 import { StudentDetailsComponent } from './student-details/student-details.component';
 import { StudentServiceService } from './student-service.service';
 import { HttpClientModule } from '@angular/common/http';
+import { StudentsListComponent } from './students-list/students-list.component';
+import { CoursesListComponent } from './courses-list/courses-list.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +43,9 @@ import { HttpClientModule } from '@angular/common/http';
     ComponentInteractionChildToParentViceVersaComponent,
     PipesComponent,
     StudentListComponent,
-    StudentDetailsComponent
+    StudentDetailsComponent,
+    StudentsListComponent,
+    CoursesListComponent
   ],
   imports: [
     BrowserModule,
@@ -49,6 +53,8 @@ import { HttpClientModule } from '@angular/common/http';
     FormsModule,
     HttpClientModule,
   ],
+
+  //service class we provided
   providers: [StudentServiceService],
   bootstrap: [AppComponent]
 })

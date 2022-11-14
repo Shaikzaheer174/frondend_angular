@@ -55,5 +55,10 @@ pipes ==> We're going to use in angular.What is meant by pipe?pipes are used to 
 services explained through the studentdetails and studentlist component
 dependency injection: StudentServiceService is a serviceclass that provides services tostudentdetails and studentlist component.
 
+fetching data through http
+created student ts file as a interface for observable return type
 
+added error handling while fetching data through http by catchError
+
+created 2 components named studentlist and courselist for routing nd navigation concept
 
