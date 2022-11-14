@@ -9,11 +9,14 @@ import { StudentServiceService } from '../student-service.service';
 export class StudentListComponent implements OnInit {
 
   public student:any = [];
+  public errMsg:any = "";
+  
   constructor(private _stdService: StudentServiceService) { }
 
   ngOnInit(): void { //it is called once when the component get initailized
     this._stdService.getstudents()
-    .subscribe(data => this.student = data)  //one liner code from below method
+    .subscribe(data => this.student = data,
+     error => this.errMsg = error  )  //one liner code from below method
   }
 
   //subscribe(data => this.student = data)  can be as function as
