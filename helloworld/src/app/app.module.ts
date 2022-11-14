@@ -21,6 +21,7 @@ import { PipesComponent } from './pipes/pipes.component';
 import { StudentListComponent } from './student-list/student-list.component';
 import { StudentDetailsComponent } from './student-details/student-details.component';
 import { StudentServiceService } from './student-service.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { StudentServiceService } from './student-service.service';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
   ],
   providers: [StudentServiceService],
   bootstrap: [AppComponent]

@@ -1,0 +1,6 @@
+// format for observable
+export interface  studentInterface{
+    id: number,
+    name: string,
+    course: string,
+}

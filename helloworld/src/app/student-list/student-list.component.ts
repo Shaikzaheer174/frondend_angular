@@ -12,9 +12,15 @@ export class StudentListComponent implements OnInit {
   constructor(private _stdService: StudentServiceService) { }
 
   ngOnInit(): void { //it is called once when the component get initailized
-    this.student = this._stdService.getstudents();
+    this._stdService.getstudents()
+    .subscribe(data => this.student = data)  //one liner code from below method
   }
 
+  //subscribe(data => this.student = data)  can be as function as
+  //  subscribe(data){
+  // student = data;
+  //}
+  
 
   
 

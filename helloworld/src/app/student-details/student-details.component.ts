@@ -13,6 +13,7 @@ export class StudentDetailsComponent implements OnInit {
   public student: any = []
 
   ngOnInit(): void { //it is called once when the component get initailized
-    this.student = this._stdService.getstudents();
+    this._stdService.getstudents()
+    .subscribe(data => this.student = data);
   }
 }
