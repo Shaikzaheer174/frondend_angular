@@ -62,3 +62,5 @@ added error handling while fetching data through http by catchError
 
 created 2 components named studentlist and courselist for routing nd navigation concept
 
+wild card routes and re-direction
+
