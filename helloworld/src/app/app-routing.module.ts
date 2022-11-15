@@ -12,9 +12,9 @@ const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full'},
   
   { path:'student', component: StudentsListComponent },
-  { path:'course', component: CoursesListComponent },
+  { path:'course-list', component: CoursesListComponent },
   //: is a placeholder for route parameter
-  { path: 'course/:id', component: CourseDetailsComponent},
+  { path: 'course-list/:id', component: CourseDetailsComponent},
   { path: 'home', component: HomeComponent},
 
   //wild card route always at bottom

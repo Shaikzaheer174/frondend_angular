@@ -91,7 +91,13 @@ export class CoursesListComponent implements OnInit {
   ];
 
   onSelect(x:any){
-    this._router.navigate(['/course',x.id])   //it provides info to angular to construct url
+    // obsolute navigation
+    // this._router.navigate(['/course',x.id])   //it provides info to angular to construct url
+
+    // relative navigation
+    this._router.navigate([x.id],{relativeTo:this._activatedRoute});
+
+
   }
 
   isSelected(x:any){
