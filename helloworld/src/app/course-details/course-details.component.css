@@ -33,3 +33,11 @@ nav a.active {
     color: #3643b6;
     background-color: #49ce0c;
 }
+  h2 {
+      color: yellow;
+      text-align: center;
+      font-size: 40px;
+      font-family: play;
+      font-weight: bold;
+  }
+

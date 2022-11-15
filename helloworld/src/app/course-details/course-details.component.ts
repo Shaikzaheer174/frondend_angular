@@ -8,35 +8,37 @@ import { ActivatedRoute, ParamMap, Router } from '@angular/router';
 })
 export class CourseDetailsComponent implements OnInit {
 
-  public courseId:any;
+  public courseId: any;
 
   constructor(private _activatedRoute: ActivatedRoute, private _route: Router) { }
 
   ngOnInit() {
-  //  let cId = this._activatedRoute.snapshot.paramMap.get('id');
+    //  let cId = this._activatedRoute.snapshot.paramMap.get('id');
 
-   this._activatedRoute.paramMap.subscribe((params: ParamMap) => {  //paramMap returns observable so to capture we need subscribe()
-    let id = Number(params.get('id'));
-    this.courseId = id;
-   })
-   
+    this._activatedRoute.paramMap.subscribe((params: ParamMap) => {  //paramMap returns observable so to capture we need subscribe()
+      let id = Number(params.get('id'));
+      this.courseId = id;
+    })
+
   }
 
-  toPrevious(){
+  toPrevious() {
     let previousId = this.courseId - 1;
     this._route.navigate(['/course/', previousId]);
 
 
   }
 
-  toNext(){
+  toNext() {
     let nextId = this.courseId + 1;
     this._route.navigate(['/course', nextId]);
   }
 
-  goBack(){
-    let selectedId = this.courseId;
-    this._route.navigate(['/course', {id:selectedId}]); //optional parameter
+
+  // optional route parameter concept
+  goBack() {
+    let selectedId = this.courseId ? this.courseId : null;
+    this._route.navigate(['/course', { id: selectedId }]); //optional parameter
   }
-  
+
 }
