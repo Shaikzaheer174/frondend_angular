@@ -34,5 +34,9 @@ export class CourseDetailsComponent implements OnInit {
     this._route.navigate(['/course', nextId]);
   }
 
-
+  goBack(){
+    let selectedId = this.courseId;
+    this._route.navigate(['/course', {id:selectedId}]); //optional parameter
+  }
+  
 }
