@@ -26,6 +26,7 @@ import { StudentsListComponent } from './students-list/students-list.component';
 import { CoursesListComponent } from './courses-list/courses-list.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { HomeComponent } from './home/home.component';
+import { CourseDetailsComponent } from './course-details/course-details.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,8 @@ import { HomeComponent } from './home/home.component';
     StudentsListComponent,
     CoursesListComponent,
     PageNotFoundComponent,
-    HomeComponent
+    HomeComponent,
+    CourseDetailsComponent
   ],
   imports: [
     BrowserModule,

@@ -64,3 +64,6 @@ created 2 components named studentlist and courselist for routing nd navigation 
 
 wild card routes and re-direction
 
+Route parameters, If we want to send some data or ID from one component to another component then We use around parameters, For sending data from one component we use router service And to receive data we use activated route Service.
+ex: Course List  & course details Component.
+

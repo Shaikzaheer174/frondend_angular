@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { CourseDetailsComponent } from './course-details/course-details.component';
 import { CoursesListComponent } from './courses-list/courses-list.component';
 import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
@@ -12,7 +13,9 @@ const routes: Routes = [
   
   { path:'student', component: StudentsListComponent },
   { path:'course', component: CoursesListComponent },
-  {path: 'home', component: HomeComponent},
+  //: is a placeholder for route parameter
+  { path: 'course/:id', component: CourseDetailsComponent},
+  { path: 'home', component: HomeComponent},
 
   //wild card route always at bottom
   { path: "**", component:PageNotFoundComponent}
